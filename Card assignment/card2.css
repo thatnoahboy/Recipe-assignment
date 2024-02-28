@@ -1,0 +1,133 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+ font-family: "Lexend Deca", sans-serif;
+ font-family: "Inter", sans-serif; */
+ body {
+    background-color: hsl(233, 47%, 7%);
+  }
+  main {
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 70%;
+    border-radius: 5px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .div1 {
+    width: 40%;
+    height: 30%;
+    padding: 4%;
+    display: inline-block;
+  }
+  
+  h1 {
+    color: hsl(0, 0%, 100%);
+  }
+  .ins {
+    color: hsl(277, 64%, 61%);
+    font-size: 1.5rem;
+  }
+  p {
+    color: hsla(0, 0%, 100%, 0.575);
+    display: inline-block;
+    font-size: 15px;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+  .statp {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.575);
+  }
+  span {
+    color: hsla(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .div2 {
+    width: 60%;
+    background-color: hsl(277, 64%, 61%);
+    background-size: cover;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  @media screen and (max-width: 550px) {
+    main {
+      flex-direction: column-reverse;
+      width: 70%;
+    }
+    .div1 {
+      width: 80%;
+      height: 30%;
+      padding: 4%;
+      text-align: center;
+      padding-left: 10%;
+    }
+  
+    .ins {
+      color: hsl(277, 64%, 61%);
+      font-size: 1.5rem;
+    }
+    p {
+      display: inline-block;
+    }
+    .stats {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .statp {
+      font-size: 0.6rem;
+    }
+    span {
+      color: hsla(0, 0%, 100%);
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  
+    .div2 {
+      width: 100%;
+    }
+  }
